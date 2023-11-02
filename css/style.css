@@ -1,0 +1,27 @@
+*{
+    /*reset das margens e do padding do navegador*/
+    margin:0;
+    padding:0;
+     /*altera a familia de fontes do elemento*/ 
+    font-family:"Monteserrat", Arial,Helvetica, sans-serif
+}
+h1,h2,h3{
+    color: #333;
+}
+p {
+    color: #70747A
+
+}
+.navbar-container {
+    /*largura*/
+    width: 100%;
+    /*altura*/
+    height: 80px;
+    /*fundo*/
+    background-color: #232a31;
+    /*em= representa uma vez o tamanho da fonte definida no elemento pai. Ex: só  no pai foi definida fonyte de 10px e o filhoi tem 1em, o tamanho do filho será de 10px e assim por diante. Caso o pai não tenha um tamanho definido ele irá usar como base 16px que é a fonte do navegador*/
+    padding: 0 2em;
+}
+.logo{
+    width: 5em;
+}
