@@ -21,7 +21,23 @@ p {
     background-color: #232a31;
     /*em= representa uma vez o tamanho da fonte definida no elemento pai. Ex: só  no pai foi definida fonyte de 10px e o filhoi tem 1em, o tamanho do filho será de 10px e assim por diante. Caso o pai não tenha um tamanho definido ele irá usar como base 16px que é a fonte do navegador*/
     padding: 0 2em;
+    /*Impede que a propriedade padding faça o elemento crescer de tamannho. Ex: se um padding for usado em um elemento de 200px de largura e 200px de altura aumento de tamanho do elemento. Quando usamos o box-sizing:border-box; esse aumento de tamanho não irá acontecer pois o espaço do padding será descontado do elemento pai.*/
+    box-sizing: border-box;
+    position: relative;
 }
 .logo{
-    width: 5em;
+    width: 50px;
+    margin-top: 15px;
+}
+
+nav {
+    position:relative;
+}
+
+.navbar-items {
+    position: absolute;
+    list-style: none; /*retira os marcadores da lista */
+    display:inline-block; /*mudar de bloco para linha. Display altera o comportamento dos elementos na tela. Exemplo, converte um elemento de bloco para um elemento de linha, e um elemento de linha p/ um elemento de bloco. Assim, como também permite definir um elemento como flexivel usando o display:flex.*/
+    margin: 0; /*coordenada que só é possível a utilização quando se tem um elemento difinido como position:absolute*/
+    right: 0;
 }
