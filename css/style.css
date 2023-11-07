@@ -40,4 +40,45 @@ nav {
     display:inline-block; /*mudar de bloco para linha. Display altera o comportamento dos elementos na tela. Exemplo, converte um elemento de bloco para um elemento de linha, e um elemento de linha p/ um elemento de bloco. Assim, como também permite definir um elemento como flexivel usando o display:flex.*/
     margin: 0; /*coordenada que só é possível a utilização quando se tem um elemento difinido como position:absolute*/
     right: 0;
+    height: 80px;
+    line-height: 80px; 
+    /*line-height altera o espaço entre as linhas de texto. Quando se usa um line-height da mesma altura que o elemento ele acaba por centralizar o texto na vertical.*/
+   list-style:none;
 }
+.navbar-items li {
+    display:inline-block;
+    text-transform: uppercase; 
+    /*text-transform:uppercase transforma todo o texto em caixa alta (letras maiuscula)*/
+    margin-left: 25px;
+}
+
+
+.navbar-items li a{
+    color:#fff;
+    text-decoration: none; /*none serve para retirar o qualquer elemento. Text-decoration: none retira o estilo underline do link.*/
+    transition: .5s; /*vem antes de aplicar o hover. ADefine em quanto tempo a animação do hover irá acontecer.*/
+}
+
+.navbar-items li a:hover /*Hover representa o passar do mouse sobre o elelemento.*/{
+    color: #ccc;
+}
+
+.default-btn{
+    background-color: #2cc76a;
+    padding: 15px 20px;
+    border-radius: 5px;
+    /*border-radius arredponda as bordas do elemento*/
+}
+/*Incio do main*/
+ .main-banner {
+     /*define uma imagem para o fundo do elemento*/
+     background-image: url('../img/mainbanner.png');
+     /*define como a imgaem irá se adaptar ao elemento onde ela foi inserida. O valor cover define que a imagem terá o menor tamanho possivel, fazendo assim que ela consiga caber dentro do elemento*/
+     background-size:cover;
+     /*define se a imagem irá se repetir ou não. Ex: irá se reptir tanto no eixo x quanto no y, reapet-x: irá se repetir somente no eixo x, repeat-y: irá se repetir somento no eixo y e no-reapet define quea imagem não irá sde repetir*/
+     background-repeat: no-repeat;
+     /*defiencomo a imagem será ixibida dentro do eleemnto nde ela foi inserida. Ex: nesse caso define que a imagem será posicionada a partir do seu centro no elemento onde ela estiver. */
+     background-position: center;
+     padding: 10em 0;
+
+ }
