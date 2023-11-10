@@ -80,5 +80,167 @@ nav {
      /*defiencomo a imagem será ixibida dentro do eleemnto nde ela foi inserida. Ex: nesse caso define que a imagem será posicionada a partir do seu centro no elemento onde ela estiver. */
      background-position: center;
      padding: 10em 0;
+     position: relative;
+    text-align: center;
 
  }
+ .main-banner h1,
+.main-banner p {
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+}
+
+.main-banner h1 {
+    font-size: 54px;
+}
+
+.main-banner p {
+    font-size: 32px;
+}
+
+/* especialidades */
+
+.specialties-container {
+    padding: 5em 0;
+}
+
+.specialties-container ul {
+    display: flex;
+    /* flex-direction: row; e flex-wrap: nowrap; mesmo não estando presente estará como padrão na página*/
+    width: 90%;
+    margin: 0 auto;
+    list-style: none;
+}
+
+.specialties-container ul li {
+    flex: 1 1 200px;
+    text-align: center;
+    padding: 20px;
+}
+
+.fa-solid {
+    font-size: 60px;
+    margin-bottom: 15px;
+}
+
+.fa-shield-halved {
+    color: #2cc76a
+}
+
+.fa-rocket {
+    color: #ef3f29;
+}
+
+.fa-comments {
+    color: #EF8F29;
+}
+
+.specialties-container ul li h3 {
+    margin-bottom: 25px;
+    color: #333;
+}
+
+.specialties-container ul li p {
+    /* espaçamento entre as linhas */
+    line-height: 24px;
+    color: #70747a;
+}
+
+/* preços */
+
+.pricing-container {
+    padding-bottom: 5em;
+    text-align: center;
+}
+
+.pricing-container h2 {
+    font-size: 50px;
+    margin-top: 0px;
+}
+
+.pricing-container p {
+    font-size: 20px;
+}
+
+.plans-container {
+    display: flex;
+   /*space-between: aplica espaçamento entre os elementos filhos. Esse espaççamento irá depender de qaunto espaço vazio resta no elemento pai.*/
+   /*space-around: faz o mesmo que o space-between com a única diferença que também será colocado espaçamento nas margens esquerda e direta.*/
+    justify-content: space-between;
+    margin-top: 50px;
+    width: 90%;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.plans-container .plan {
+    width: 300px;
+    margin: 0 20px;
+}
+.plans-container .plan ul{
+    list-style: none;
+    padding: 0;
+
+}
+
+.plan li{
+    height: 70px;
+    background-color: #e8e9ea;
+    color: #333;
+    line-height: 70px;
+}
+ .plan .price{
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    background-color: #2cc76a;
+    color: #fff;
+    text-align: center;
+    line-height: 140px;
+    font-size: 25px;
+    position: relative;
+    margin: 0 auto;
+    top: 40PX;
+ }
+ 
+ .plan .plan-name{
+     text-transform: uppercase;
+     font-size: 25px;
+     padding-top:50px;
+     padding-bottom: 20px;
+     background-color: #202b34;
+     color: #FFF;
+     font-weight: bold;
+
+ }
+
+ .plan .plan-btn{
+     background-color: #2cc76a;
+     color:#FFF;
+     font-size: 25px;
+     height: 75px;
+     line-height: 75px;
+     /*aparece o "mãozinha" sem o link*/
+     cursor:pointer;
+ }
+
+ .plan .recommended{
+     background-color:#0000FF;
+ }
+
+.searchdomain-container{
+    background-color: #34454e;
+    text-align: center;
+    padding: 5em 0;
+
+}
+
+.searchdomain-container h2{
+    color: #FFF;
+    font-size: 60px;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
